@@ -32,6 +32,28 @@
           <label for="time">Время</label>
           <input type="time" id="time" name="time" required />
         </div>
+        <div>
+          <label for="guests">Количество гостей</label>
+          <input type="number" id="guests" name="guests" min="1" max="10" />
+        </div>
+        <div>
+          <label for="occasion">Повод</label>
+          <select id="occasion" name="occasion">
+            <option value="dinner">Просто поужинать</option>
+            <option value="birthday">День рождения</option>
+            <option value="buisness">Деловая встреча</option>
+            <option value="romantic">Свидание</option>
+          </select>
+        </div>
+        <div>
+          <p>Где сидеть</p>
+          <input type="radio" id="hall" name="seat" value="hall" />
+          <label for="hall">Зал</label>
+          <input type="radio" id="terrace" name="seat" value="terrace" />
+          <label for="terrace">Терраса</label>
+          <input type="radio" id="VIP" name="seat" value="VIP" />
+          <label for="VIP">VIP</label>
+        </div>
       </form>
     </main>
     <footer>
