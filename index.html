@@ -5,5 +5,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Кафе Дала</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <h1>Кафе Дала</h1>
+    </header>
+    <main>
+      <h2>Забронировать столик</h2>
+      <form>
+        <div>
+          <label for="name">Имя</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div>
+          <label for="phone">Телефон</label>
+          <input type="tel" id="phone" name="phone" required />
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" />
+        </div>
+        <div>
+          <label for="date">Дата</label>
+          <input type="date" id="date" name="date" required />
+        </div>
+        <div>
+          <label for="time">Время</label>
+          <input type="time" id="time" name="time" required />
+        </div>
+        <div>
+          <label for="guests">Количество гостей</label>
+          <input type="number" id="guests" name="guests" min="1" max="10" />
+        </div>
+        <div>
+          <label for="occasion">Повод</label>
+          <select id="occasion" name="occasion">
+            <option value="dinner">Просто поужинать</option>
+            <option value="birthday">День рождения</option>
+            <option value="buisness">Деловая встреча</option>
+            <option value="romantic">Свидание</option>
+          </select>
+        </div>
+        <div>
+          <p>Где сидеть</p>
+          <input type="radio" id="hall" name="seat" value="hall" />
+          <label for="hall">Зал</label>
+          <input type="radio" id="terrace" name="seat" value="terrace" />
+          <label for="terrace">Терраса</label>
+          <input type="radio" id="VIP" name="seat" value="VIP" />
+          <label for="VIP">VIP</label>
+        </div>
+        <div>
+          <p>Пожелания</p>
+          <input type="checkbox" id="chair" name="wishes" value="chair" />
+          <label for="chair">Детский стульчик</label>
+          <input type="checkbox" id="window" name="wishes" value="window" />
+          <label for="chair">Столик у окна</label>
+          <input type="checkbox" id="cake" name="wishes" value="cake" />
+          <label for="chair">Торт от кафе</label>
+        </div>
+      </form>
+    </main>
+    <footer>
+      <p>Страница сделана: Айжан Адамова, 2026</p>
+    </footer>
+  </body>
 </html>
